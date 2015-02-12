@@ -14,6 +14,15 @@
 # Configure Using Gemfile
 # gem 'pg'
 #
+
+#test:
+#  <<: *default
+#  database: travis-test_test
+test:
+  adapter: postgresql
+  database: travis_ci_test
+  username: postgres
+
 default: &default
   adapter: postgresql
   encoding: unicode

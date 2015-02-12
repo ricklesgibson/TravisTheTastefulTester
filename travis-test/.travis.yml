@@ -1,0 +1,7 @@
+language: ruby
+rvm:
+  - 2.0.0-p481
+//make sure the name here matchers your project name..i.e if you did rails new travis-test..use 
+//travis_test like below
+before_script:
+  - psql -c 'create database travis_test_test;' -U postgres
